@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf')
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../assets/fonts/static/Inter-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Inter ExtraBold';
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf')
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.navigation__brand {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    top: 0rem;
+    left: 5rem;
+    
+    
+}
+
+.navigation__container ul {
+    position: absolute;
+    top: 0rem;
+    right: 1px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 1rem;
+    
+}
+.navigation__item a {  
+  font-size: 3rem;  
+  text-decoration: none;
+  color: blue;
+}
+
+.navigation__item a:hover {
+    color: #F38D2B;
+}
+
+.btn div:hover {
+    color: #F38D2B;
+}
+body {
+    padding: 4rem 2rem;
+    background-color: hsl(36, 100%, 99%);
+   
+}
+
+h1 {
+    font-size: 110px;
+    font-family: 'Italianno', cursive;
+    text-align: left;
+    
+}
+
+h2 {
+   text-align: right; 
+   font-size: 60px;
+   font-weight: 500px;
+   padding-bottom: 100px;
+   line-height: 0px;
+}
+h3 {
+   padding-top: 90px;
+   font-size: 10px;
+   
+}
+h4 {
+    font-size: 10px;
+}
+/* body  {
+    background-color: #DBA39A;
+} */
+span {
+    font-style: italic;
+    
+}
+.card   {
+    width: 500px;
+}
+.message {
+    background-color: burlywood;
+}
+.mus {
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 4rem;
+    font-family: 'Passion One', cursive;
+}
+
+.card-body  {
+    background-color: #FFDCB8;
+}
+
+.top {
+    /* background-color: blue; */
+    height: 325px;
+    width: 1000px;
+    background-image: url(images/viber_image_2022-11-29_23-52-26-643.jpg);
+}
+
+
+.btm {
+    /* background-color: red; */
+    height: 250px;
+    width: 1000px;
+    background-image: url(images/viber_image_2022-11-29_23-58-48-321.png);
+}
+.logo {
+    
+    
+    height: 150px;
+    width: 150;
+}
+
+.input-group {
+    margin-bottom: 10px; display: inline-block; margin-right: 10px;
+}
+.error {
+    color: red;
+    font-weight: 700;
+    display: none;
+}
+.input-field {
+    outline: none;
+    border: 2px solid red;
+    
+}
+
