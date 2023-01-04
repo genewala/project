@@ -2,7 +2,6 @@
     font-size: 10px;
 }
 .top {
-    /* background-color: blue; */
     height: 60%;
     width: 100%;
     position: relative;
@@ -72,6 +71,9 @@ a {
     border-radius: 2rem;
     justify-content: center;  
     
+}
+.overlay {
+    z-index: 6;
 }
 
 .navigation__brand {
