@@ -61,7 +61,7 @@ a {
 
 .btn {
     position: absolute;
-    top: 2px;
+    margin-top: 52rem;
     right: 20rem;
     height: 10rem;
     width: 40rem;
@@ -72,10 +72,6 @@ a {
     border-radius: 2rem;
     justify-content: center;  
     
-}
-
-.overlay {
-    z-index: 9;
 }
 
 .navigation__brand {
@@ -211,3 +207,15 @@ h5 {
         top: 105px;
     }
 }
+
+.ah3 {
+    font-size: 5rem;
+    margin: auto;
+    margin-top: 5rem;
+   
+}
+
+.aboutus {
+    background-color: beige;
+}
+
