@@ -2,11 +2,12 @@
     font-size: 10px;
 }
 .top {
-    height: 60%;
+    height: 55%;
     width: 100%;
     position: relative;
     margin: 0;
     border: 0;
+    background-blend-mode: darken;
 }
 
 .top-bg {
@@ -16,6 +17,10 @@
     
 }
 
+.about_main {
+    width: 100%;
+    height: 95%;
+}
 .btm {
     /* background-color: red; */
     height: 40%;
@@ -23,6 +28,19 @@
     position: relative;
     
     
+}
+
+.nav_picture {
+    width: 100%;
+}
+
+.aboutus {
+    /* background-color: red; */
+    height: 95%;
+    width: 100%;
+    position: relative;
+    background-color: beige;
+     
 }
 .btm-bg {
     height: 100%;
@@ -60,7 +78,7 @@ a {
 
 .btn {
     position: absolute;
-    margin-top: 52rem;
+    margin-top: 47.5rem;
     right: 20rem;
     height: 10rem;
     width: 40rem;
@@ -86,6 +104,13 @@ a {
     
 }
 
+.nav_border {
+        height: 5%;
+        width: 100%;
+        position: relative;
+
+}
+
 .navigation__container ul {
     position: absolute;
     top: 0rem;
@@ -94,16 +119,18 @@ a {
     width: 50%;
     justify-content: space-between;
     padding-right: 1rem;
+    list-style: none;
     
 }
 .navigation__item a {  
   font-size: 3rem;  
   text-decoration: none;
-  color: blue;
+  color: white;
+  
 }
 
 .navigation__item a:hover {
-    color: #F38D2B;
+    color: #8B0000;
 }
 
 .btn div:hover {
@@ -217,7 +244,37 @@ h5 {
    
 }
 
-.aboutus {
-    background-color: beige;
+.mus {
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 4rem;
+    font-family: 'Passion One', cursive;
 }
 
+.card   {
+    width: 500px;
+}
+.card-body  {
+    background-color: #FFDCB8;
+}
+
+span {
+    font-style: italic;
+    
+}
+.input-group {
+    margin-bottom: 10px; display: inline-block; margin-right: 10px;
+}
+.error {
+    color: red;
+    font-weight: 700;
+    display: none;
+}
+.input-field {
+    outline: none;
+    border: 2px solid red;
+    
+}
+.btn2 div:hover {
+    color: #F38D2B;
+}

@@ -37,19 +37,40 @@
     width: 50%;
     justify-content: space-between;
     padding-right: 1rem;
+    list-style: none;
     
+}
+
+.nav_picture {
+    width: 100%;
 }
 .navigation__item a {  
   font-size: 3rem;  
   text-decoration: none;
-  color: blue;
+  color: white;
+}
+
+.nav_border {
+    height: 5%;
+    width: 100%;
+    position: relative;
+
+}
+
+.aboutus {
+    
+    height: 95%;
+    width: 100%;
+    position: relative;
+    
+     
 }
 
 .navigation__item a:hover {
-    color: #F38D2B;
+    color: #8B0000;
 }
 
-.btn div:hover {
+.btn2 div:hover {
     color: #F38D2B;
 }
 body {
@@ -89,17 +110,21 @@ span {
 }
 .card   {
     width: 500px;
+   display: flex;
+   flex-direction: row;
 }
 .message {
     background-color: burlywood;
 }
 .mus {
-    text-align: center;
     padding-top: 20rem;
     padding-bottom: 4rem;
     font-family: 'Passion One', cursive;
+    display: flex;
+    flex-direction: row;
+    font-size: 20rem;
+    
 }
-
 .card-body  {
     background-color: #FFDCB8;
 }

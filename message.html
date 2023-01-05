@@ -6,38 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>message</title>
 </head>
-<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 
 <body class="message" >
 
  <div class="main">
-    <div class="navigation__brand">
-      <img src="images/comfort.png" alt="Logo" />
-    </div>
+  
+  <div class="nav_border">
+    <img src="/images/nav_backgroud.png" alt="" class="nav_picture">
     <nav class="navigation__container">
       <ul>
         <li class="navigation__item"><a href="index.html">Home</a></li>
         <li class="navigation__item"><a href="message.html">Message Us</a></li>
         <li class="navigation__item"><a href="about.html">About Us</a></li>
-        <li class="navigation__item"><a href="products.html">Products</a></li>
+        <li class="navigation__item"><a href="products.html">Menu</a></li>
       </ul>
     </nav>
- </div>
+  </div>
+  
 
-    <h1 class="mus">Message Us!</h1>
+    <div class="aboutus">
+      <div class="navigation__brand">
+        <img src="images/comfort.png" alt="Logo" />
+      </div>
+      <div>
+        <h5 class="mus">Message Us!</h5>
+      </div>
+      
     
     <div class="card m-auto">
         <div class="card-body">
     <div class="input-group">
-        <span class="input-group-text">First and last name</span>
-        <input type="text" aria-label="First name" class="form-control" id="firstname">
-        <span class="error" id="error-span">This field is required</span>
-        <input type="text" aria-label="Last name" class="form-control" id="lastname">
-        <span class="error" id="error-span-2">This field is required</span>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" placeholder="Enter your first Name">
+      <span class="error" id="error-span">This field is reuired</span>
+
+      </div>
+      
+      <div class="input-group">
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" placeholder="Enter your Last Name">
+      <span class="error" id="error-span-2">This field is reuired</span>
       </div>
     <div class="mb-3 mt-2">
         <label for="email" class="form-label">Email address</label>
@@ -50,11 +64,12 @@
         <label for="textarea">Message</label>
       </div>
       <div class="input-group mb-3 mt-3">
-        <input type="file" class="form-control" id="file">
-        <label class="input-group-text" for="file">Upload</label>
+        <label for="file">Upload a File : </label>
+        <input type="file" id="file">
         <span class="error" id="error-span-5">Please upload photo</span>
       </div>
-      <input class="btn btn-primary" id="submitButton"   type="submit" value="Submit" onclick="handleSubmit()">
+      <input class="btn2 btn-primary" id="submitButton"   type="submit" value="Submit" onclick="handleSubmit()">
+    </div>
     </div>
 </div>
 </body>
@@ -84,14 +99,30 @@
                 errorSpan3.style.display = "inline-block";
                 email.classList.add("input-field");
             }
+            else if(!textarea.value) {
+              errorSpan4.style.display = "inline-block";
+              file.classList.add("input-field");
+            }
+
+            else if(!file.value) {
+              errorSpan5.style.display = "inline-block";
+              file.classList.add("input-field");
+            }
+
+            
+
             else {
                 alert("Submnit form succesfuly");
                 errorSpan.style.display = "none";
                 errorSpan2.style.display = "none";
                 errorSpan3.style.display = "none";
+                errorSpan4.style.display = "none";
+                errorSpan5.style.display = "none";
                 firstname.classList.remove("input-field");
                 lastname.classList.remove("input-field");
                 email.classList.remove("input-field");
+                textarea.classList.remove("input-field");
+                file.classList.remove("input-field");
             }
 
     }
