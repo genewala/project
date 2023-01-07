@@ -1,0 +1,29 @@
+.menu_body {
+   
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    
+    width: 90%;
+    height: 30%;
+    display: flex;
+    position: relative;
+    margin: auto;
+    /* border: 1px solid green; */
+    flex-wrap: wrap;
+    
+}
+.column {
+    width: 31%;
+    border: 5px sollid blue;
+    height: 90%;
+    background-color: black;
+    margin: auto;
+    
+    
+}
